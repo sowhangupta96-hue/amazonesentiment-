@@ -32,7 +32,7 @@ if st.button("Analyze Sentiment"):
             try:
                 # Call Flask backend
                 response = requests.post(
-                    "https://amazonesentiment.onrender.com",
+                    "https://amazonesentiment.onrender.com/predict",
                     json={"reviews": review},
                     timeout=30
                 )
